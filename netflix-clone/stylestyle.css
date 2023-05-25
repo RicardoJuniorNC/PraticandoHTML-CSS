@@ -39,10 +39,13 @@ body {
     flex-direction: row;
     justify-content: space-around;
     padding: 40px;
-    overflow-x: scroll;
-    scroll-snap-type: mandatory;
-    -webkit-overflow-scrolling: touch;
-    overflow: hidden;
+    overflow: auto;
+    scroll-behavior: smooth;
+    -webkit-appearance: none;
+}
+
+#container::-webkit-scrollbar {
+    -webkit-appearance: none;
 }
   
 .imagem {
@@ -71,17 +74,18 @@ img {
 }
 
 footer {
-    padding: 40px;
+    padding: 20px;
     color: gray;
-.list-three-collumns{
+    text-align: center;
+    .list-three-collumns{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    grid-gap: 10px;
     list-style-type: none;
     padding: 0;
     }
     
     .list-three-collumns li {
-    padding: 10px;
+    padding: 6px;
     }
 }
